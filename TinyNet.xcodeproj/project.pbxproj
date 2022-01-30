@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14777CF526CCAAE00020BED1 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14777CF426CCAAE00020BED1 /* ResponseModel.swift */; };
+		14777CF726CCAC9B0020BED1 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14777CF626CCAC9B0020BED1 /* Blog.swift */; };
 		14B923B226CB959C00EDC402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923B126CB959C00EDC402 /* AppDelegate.swift */; };
 		14B923B426CB959C00EDC402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923B326CB959C00EDC402 /* SceneDelegate.swift */; };
 		14B923B626CB959C00EDC402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923B526CB959C00EDC402 /* ViewController.swift */; };
@@ -15,6 +17,17 @@
 		14B923BE26CB959F00EDC402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B923BC26CB959F00EDC402 /* LaunchScreen.storyboard */; };
 		14B923C926CB959F00EDC402 /* TinyNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923C826CB959F00EDC402 /* TinyNetTests.swift */; };
 		14B923D426CB95A000EDC402 /* TinyNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923D326CB95A000EDC402 /* TinyNetUITests.swift */; };
+		14B923E726CB95C300EDC402 /* NetMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E226CB95C300EDC402 /* NetMiddleware.swift */; };
+		14B923E826CB95C300EDC402 /* TinyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E326CB95C300EDC402 /* TinyNet.swift */; };
+		14B923E926CB95C300EDC402 /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E426CB95C300EDC402 /* TestAPI.swift */; };
+		14B923EA26CB95C300EDC402 /* demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E526CB95C300EDC402 /* demo.swift */; };
+		14B923EB26CB95C300EDC402 /* NetDestructuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E626CB95C300EDC402 /* NetDestructuring.swift */; };
+		14B923EE26CB980500EDC402 /* NetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923ED26CB980500EDC402 /* NetCache.swift */; };
+		14B923F626CB9B5E00EDC402 /* TinyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923F526CB9B5E00EDC402 /* TinyCodable.swift */; };
+		14C7763727A2848100391FB0 /* TinyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7763627A2848100391FB0 /* TinyJSON.swift */; };
+		64831748F611B29853111F3C /* Pods_TinyNetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F19CD07703D3EB3DEF045 /* Pods_TinyNetTests.framework */; };
+		96C30F47AB62E8A842744714 /* Pods_TinyNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CE33EE27D2C2A96D692FF5 /* Pods_TinyNet.framework */; };
+		C1508E135AF393CE958F2658 /* Pods_TinyNet_TinyNetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75284C1376B270B5C20D3B3A /* Pods_TinyNet_TinyNetUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14777CF426CCAAE00020BED1 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		14777CF626CCAC9B0020BED1 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		14B923AE26CB959C00EDC402 /* TinyNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B923B126CB959C00EDC402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14B923B326CB959C00EDC402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +64,23 @@
 		14B923CF26CB95A000EDC402 /* TinyNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B923D326CB95A000EDC402 /* TinyNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyNetUITests.swift; sourceTree = "<group>"; };
 		14B923D526CB95A000EDC402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B923E226CB95C300EDC402 /* NetMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetMiddleware.swift; sourceTree = "<group>"; };
+		14B923E326CB95C300EDC402 /* TinyNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyNet.swift; sourceTree = "<group>"; };
+		14B923E426CB95C300EDC402 /* TestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
+		14B923E526CB95C300EDC402 /* demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demo.swift; sourceTree = "<group>"; };
+		14B923E626CB95C300EDC402 /* NetDestructuring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetDestructuring.swift; sourceTree = "<group>"; };
+		14B923ED26CB980500EDC402 /* NetCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetCache.swift; sourceTree = "<group>"; };
+		14B923F526CB9B5E00EDC402 /* TinyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyCodable.swift; sourceTree = "<group>"; };
+		14C7763627A2848100391FB0 /* TinyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyJSON.swift; sourceTree = "<group>"; };
+		31B19EE0C049A828B649E35E /* Pods-TinyNetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNetTests.debug.xcconfig"; path = "Target Support Files/Pods-TinyNetTests/Pods-TinyNetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75284C1376B270B5C20D3B3A /* Pods_TinyNet_TinyNetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyNet_TinyNetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853BD8D6727B0887A533D37B /* Pods-TinyNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNet.debug.xcconfig"; path = "Target Support Files/Pods-TinyNet/Pods-TinyNet.debug.xcconfig"; sourceTree = "<group>"; };
+		96CE33EE27D2C2A96D692FF5 /* Pods_TinyNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C401ED3769CBC93E8324B9E9 /* Pods-TinyNet-TinyNetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNet-TinyNetUITests.release.xcconfig"; path = "Target Support Files/Pods-TinyNet-TinyNetUITests/Pods-TinyNet-TinyNetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D00F19CD07703D3EB3DEF045 /* Pods_TinyNetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyNetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29E076ED8E217BB0CF6A73B /* Pods-TinyNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNet.release.xcconfig"; path = "Target Support Files/Pods-TinyNet/Pods-TinyNet.release.xcconfig"; sourceTree = "<group>"; };
+		E23B709A9C70BFFF00EC21C6 /* Pods-TinyNet-TinyNetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNet-TinyNetUITests.debug.xcconfig"; path = "Target Support Files/Pods-TinyNet-TinyNetUITests/Pods-TinyNet-TinyNetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF8D1DFBC249C5AFA8BAC576 /* Pods-TinyNetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNetTests.release.xcconfig"; path = "Target Support Files/Pods-TinyNetTests/Pods-TinyNetTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C30F47AB62E8A842744714 /* Pods_TinyNet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64831748F611B29853111F3C /* Pods_TinyNetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +104,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1508E135AF393CE958F2658 /* Pods_TinyNet_TinyNetUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14777CF326CCA9400020BED1 /* ReponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				14777CF426CCAAE00020BED1 /* ResponseModel.swift */,
+				14777CF626CCAC9B0020BED1 /* Blog.swift */,
+			);
+			path = ReponseModels;
+			sourceTree = "<group>";
+		};
+		14777CF826CCACFC0020BED1 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				14B923E426CB95C300EDC402 /* TestAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 		14B923A526CB959C00EDC402 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +135,8 @@
 				14B923C726CB959F00EDC402 /* TinyNetTests */,
 				14B923D226CB95A000EDC402 /* TinyNetUITests */,
 				14B923AF26CB959C00EDC402 /* Products */,
+				78D4B1BB270D01FB4A724859 /* Pods */,
+				292DBCB003E8A79FC79D19DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +153,13 @@
 		14B923B026CB959C00EDC402 /* TinyNet */ = {
 			isa = PBXGroup;
 			children = (
+				14777CF826CCACFC0020BED1 /* APIs */,
+				14777CF326CCA9400020BED1 /* ReponseModels */,
+				14B923E126CB95B600EDC402 /* TinyNet */,
 				14B923B126CB959C00EDC402 /* AppDelegate.swift */,
 				14B923B326CB959C00EDC402 /* SceneDelegate.swift */,
 				14B923B526CB959C00EDC402 /* ViewController.swift */,
+				14B923E526CB95C300EDC402 /* demo.swift */,
 				14B923B726CB959C00EDC402 /* Main.storyboard */,
 				14B923BA26CB959F00EDC402 /* Assets.xcassets */,
 				14B923BC26CB959F00EDC402 /* LaunchScreen.storyboard */,
@@ -128,6 +186,58 @@
 			path = TinyNetUITests;
 			sourceTree = "<group>";
 		};
+		14B923E126CB95B600EDC402 /* TinyNet */ = {
+			isa = PBXGroup;
+			children = (
+				14B923EF26CB98DD00EDC402 /* Helper */,
+				14B923F226CB99F800EDC402 /* Core */,
+				14B923E626CB95C300EDC402 /* NetDestructuring.swift */,
+				14B923E226CB95C300EDC402 /* NetMiddleware.swift */,
+				14B923ED26CB980500EDC402 /* NetCache.swift */,
+			);
+			path = TinyNet;
+			sourceTree = "<group>";
+		};
+		14B923EF26CB98DD00EDC402 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				14C7763627A2848100391FB0 /* TinyJSON.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		14B923F226CB99F800EDC402 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				14B923E326CB95C300EDC402 /* TinyNet.swift */,
+				14B923F526CB9B5E00EDC402 /* TinyCodable.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		292DBCB003E8A79FC79D19DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96CE33EE27D2C2A96D692FF5 /* Pods_TinyNet.framework */,
+				75284C1376B270B5C20D3B3A /* Pods_TinyNet_TinyNetUITests.framework */,
+				D00F19CD07703D3EB3DEF045 /* Pods_TinyNetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78D4B1BB270D01FB4A724859 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				853BD8D6727B0887A533D37B /* Pods-TinyNet.debug.xcconfig */,
+				D29E076ED8E217BB0CF6A73B /* Pods-TinyNet.release.xcconfig */,
+				E23B709A9C70BFFF00EC21C6 /* Pods-TinyNet-TinyNetUITests.debug.xcconfig */,
+				C401ED3769CBC93E8324B9E9 /* Pods-TinyNet-TinyNetUITests.release.xcconfig */,
+				31B19EE0C049A828B649E35E /* Pods-TinyNetTests.debug.xcconfig */,
+				FF8D1DFBC249C5AFA8BAC576 /* Pods-TinyNetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14B923D826CB95A000EDC402 /* Build configuration list for PBXNativeTarget "TinyNet" */;
 			buildPhases = (
+				5C5D42AD56F20441A78F2E5D /* [CP] Check Pods Manifest.lock */,
 				14B923AA26CB959C00EDC402 /* Sources */,
 				14B923AB26CB959C00EDC402 /* Frameworks */,
 				14B923AC26CB959C00EDC402 /* Resources */,
+				E8CF68F9E52743464CEDE700 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14B923DB26CB95A000EDC402 /* Build configuration list for PBXNativeTarget "TinyNetTests" */;
 			buildPhases = (
+				D774A173FA1FCFC70D2A42C9 /* [CP] Check Pods Manifest.lock */,
 				14B923C026CB959F00EDC402 /* Sources */,
 				14B923C126CB959F00EDC402 /* Frameworks */,
 				14B923C226CB959F00EDC402 /* Resources */,
@@ -170,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14B923DE26CB95A000EDC402 /* Build configuration list for PBXNativeTarget "TinyNetUITests" */;
 			buildPhases = (
+				885CA5D81C16CBC2E7DE4AFB /* [CP] Check Pods Manifest.lock */,
 				14B923CB26CB95A000EDC402 /* Sources */,
 				14B923CC26CB95A000EDC402 /* Frameworks */,
 				14B923CD26CB95A000EDC402 /* Resources */,
+				D7C42A9888364AABEEC82956 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +368,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C5D42AD56F20441A78F2E5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinyNet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		885CA5D81C16CBC2E7DE4AFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinyNet-TinyNetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D774A173FA1FCFC70D2A42C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinyNetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C42A9888364AABEEC82956 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyNet-TinyNetUITests/Pods-TinyNet-TinyNetUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyNet-TinyNetUITests/Pods-TinyNet-TinyNetUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinyNet-TinyNetUITests/Pods-TinyNet-TinyNetUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CF68F9E52743464CEDE700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyNet/Pods-TinyNet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyNet/Pods-TinyNet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinyNet/Pods-TinyNet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14B923AA26CB959C00EDC402 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				14B923B626CB959C00EDC402 /* ViewController.swift in Sources */,
+				14B923E926CB95C300EDC402 /* TestAPI.swift in Sources */,
+				14777CF526CCAAE00020BED1 /* ResponseModel.swift in Sources */,
+				14B923EA26CB95C300EDC402 /* demo.swift in Sources */,
+				14B923EE26CB980500EDC402 /* NetCache.swift in Sources */,
+				14B923EB26CB95C300EDC402 /* NetDestructuring.swift in Sources */,
+				14B923F626CB9B5E00EDC402 /* TinyCodable.swift in Sources */,
 				14B923B226CB959C00EDC402 /* AppDelegate.swift in Sources */,
+				14777CF726CCAC9B0020BED1 /* Blog.swift in Sources */,
 				14B923B426CB959C00EDC402 /* SceneDelegate.swift in Sources */,
+				14B923E826CB95C300EDC402 /* TinyNet.swift in Sources */,
+				14C7763727A2848100391FB0 /* TinyJSON.swift in Sources */,
+				14B923E726CB95C300EDC402 /* NetMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +661,7 @@
 		};
 		14B923D926CB95A000EDC402 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853BD8D6727B0887A533D37B /* Pods-TinyNet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +681,7 @@
 		};
 		14B923DA26CB95A000EDC402 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29E076ED8E217BB0CF6A73B /* Pods-TinyNet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +701,7 @@
 		};
 		14B923DC26CB95A000EDC402 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B19EE0C049A828B649E35E /* Pods-TinyNetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +724,7 @@
 		};
 		14B923DD26CB95A000EDC402 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8D1DFBC249C5AFA8BAC576 /* Pods-TinyNetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +747,7 @@
 		};
 		14B923DF26CB95A000EDC402 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E23B709A9C70BFFF00EC21C6 /* Pods-TinyNet-TinyNetUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +768,7 @@
 		};
 		14B923E026CB95A000EDC402 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C401ED3769CBC93E8324B9E9 /* Pods-TinyNet-TinyNetUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

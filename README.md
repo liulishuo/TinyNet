@@ -18,7 +18,7 @@ let s = TinyNet.start ^
 
 
 
-![未命名文件](/Users/liulishuo/Downloads/未命名文件.png)
+![未命名文件](/1.png)
 
 
 

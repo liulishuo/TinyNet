@@ -17,7 +17,6 @@
 		14B923BE26CB959F00EDC402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B923BC26CB959F00EDC402 /* LaunchScreen.storyboard */; };
 		14B923C926CB959F00EDC402 /* TinyNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923C826CB959F00EDC402 /* TinyNetTests.swift */; };
 		14B923D426CB95A000EDC402 /* TinyNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923D326CB95A000EDC402 /* TinyNetUITests.swift */; };
-		14B923E726CB95C300EDC402 /* NetMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E226CB95C300EDC402 /* NetMiddleware.swift */; };
 		14B923E826CB95C300EDC402 /* TinyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E326CB95C300EDC402 /* TinyNet.swift */; };
 		14B923E926CB95C300EDC402 /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E426CB95C300EDC402 /* TestAPI.swift */; };
 		14B923EA26CB95C300EDC402 /* demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923E526CB95C300EDC402 /* demo.swift */; };
@@ -25,6 +24,7 @@
 		14B923EE26CB980500EDC402 /* NetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923ED26CB980500EDC402 /* NetCache.swift */; };
 		14B923F626CB9B5E00EDC402 /* TinyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B923F526CB9B5E00EDC402 /* TinyCodable.swift */; };
 		14C7763727A2848100391FB0 /* TinyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7763627A2848100391FB0 /* TinyJSON.swift */; };
+		14DA85A229EF81E10082CE5F /* NetMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA85A129EF81E10082CE5F /* NetMiddleware.swift */; };
 		64831748F611B29853111F3C /* Pods_TinyNetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F19CD07703D3EB3DEF045 /* Pods_TinyNetTests.framework */; };
 		96C30F47AB62E8A842744714 /* Pods_TinyNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CE33EE27D2C2A96D692FF5 /* Pods_TinyNet.framework */; };
 		C1508E135AF393CE958F2658 /* Pods_TinyNet_TinyNetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75284C1376B270B5C20D3B3A /* Pods_TinyNet_TinyNetUITests.framework */; };
@@ -64,7 +64,6 @@
 		14B923CF26CB95A000EDC402 /* TinyNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B923D326CB95A000EDC402 /* TinyNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyNetUITests.swift; sourceTree = "<group>"; };
 		14B923D526CB95A000EDC402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14B923E226CB95C300EDC402 /* NetMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetMiddleware.swift; sourceTree = "<group>"; };
 		14B923E326CB95C300EDC402 /* TinyNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyNet.swift; sourceTree = "<group>"; };
 		14B923E426CB95C300EDC402 /* TestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 		14B923E526CB95C300EDC402 /* demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demo.swift; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		14B923ED26CB980500EDC402 /* NetCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetCache.swift; sourceTree = "<group>"; };
 		14B923F526CB9B5E00EDC402 /* TinyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyCodable.swift; sourceTree = "<group>"; };
 		14C7763627A2848100391FB0 /* TinyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyJSON.swift; sourceTree = "<group>"; };
+		14DA85A129EF81E10082CE5F /* NetMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetMiddleware.swift; sourceTree = "<group>"; };
 		31B19EE0C049A828B649E35E /* Pods-TinyNetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNetTests.debug.xcconfig"; path = "Target Support Files/Pods-TinyNetTests/Pods-TinyNetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75284C1376B270B5C20D3B3A /* Pods_TinyNet_TinyNetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyNet_TinyNetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		853BD8D6727B0887A533D37B /* Pods-TinyNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNet.debug.xcconfig"; path = "Target Support Files/Pods-TinyNet/Pods-TinyNet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -192,7 +192,6 @@
 				14B923EF26CB98DD00EDC402 /* Helper */,
 				14B923F226CB99F800EDC402 /* Core */,
 				14B923E626CB95C300EDC402 /* NetDestructuring.swift */,
-				14B923E226CB95C300EDC402 /* NetMiddleware.swift */,
 				14B923ED26CB980500EDC402 /* NetCache.swift */,
 			);
 			path = TinyNet;
@@ -209,6 +208,7 @@
 		14B923F226CB99F800EDC402 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				14DA85A129EF81E10082CE5F /* NetMiddleware.swift */,
 				14B923E326CB95C300EDC402 /* TinyNet.swift */,
 				14B923F526CB9B5E00EDC402 /* TinyCodable.swift */,
 			);
@@ -479,6 +479,7 @@
 				14B923B626CB959C00EDC402 /* ViewController.swift in Sources */,
 				14B923E926CB95C300EDC402 /* TestAPI.swift in Sources */,
 				14777CF526CCAAE00020BED1 /* ResponseModel.swift in Sources */,
+				14DA85A229EF81E10082CE5F /* NetMiddleware.swift in Sources */,
 				14B923EA26CB95C300EDC402 /* demo.swift in Sources */,
 				14B923EE26CB980500EDC402 /* NetCache.swift in Sources */,
 				14B923EB26CB95C300EDC402 /* NetDestructuring.swift in Sources */,
@@ -488,7 +489,6 @@
 				14B923B426CB959C00EDC402 /* SceneDelegate.swift in Sources */,
 				14B923E826CB95C300EDC402 /* TinyNet.swift in Sources */,
 				14C7763727A2848100391FB0 /* TinyJSON.swift in Sources */,
-				14B923E726CB95C300EDC402 /* NetMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

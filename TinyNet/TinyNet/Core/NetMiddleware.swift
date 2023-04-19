@@ -113,6 +113,11 @@ func reMapOut(b: Observable<TinyNet.Response>, c: NetMiddleware) -> Observable<T
 //MARK: - 插件 用于打印日志
 class LogM: NetMiddleware {
     var dataRequest: DataRequest?
+    static let dateFormatter = {
+        let dateFormatter =  DateFormatter()
+        dateFormatter.dateFormat = "HH:mm:ss.SSS"
+        return dateFormatter
+    }()
     
     override init(input: FM<DataRequest, DataRequest, NetMiddleware>? = logIn,
                   output: FM<Observable<TinyNet.Response>, Observable<TinyNet.Response>, NetMiddleware>? = logOut) {
@@ -128,11 +133,25 @@ func logIn(a: DataRequest, c: NetMiddleware) -> DataRequest {
     c.dataRequest = a
 
     if let urlRequest = try? a.convertible.asURLRequest() {
-        print("=>", urlRequest.description)
-        print("=>", urlRequest.allHTTPHeaderFields)
-        print("=>", urlRequest.httpBodyStream?.description)
-        print("=>", urlRequest.httpMethod)
-        print("=>", urlRequest.httpBody)
+        
+        var bodyDes: String?
+        if let body = urlRequest.httpBody {
+            let json = JSON(data: body)
+            bodyDes = json.description
+        }
+        
+        let output = """
+                🔵 ====== Request ====== [\(LogM.dateFormatter.string(from: Date()))]
+                \t\(urlRequest.httpMethod ?? "null")\t\t\(urlRequest.description)
+                \t-------------------
+                \t\(urlRequest.allHTTPHeaderFields as AnyObject)
+                \t-------------------
+                \t\(bodyDes ?? "null")
+                ========================
+                """
+        print(output)
+    } else {
+        print("🟡 Invalid request for \(a).")
     }
     return a
 }
@@ -145,21 +164,38 @@ func logOut(b: Observable<TinyNet.Response>, c: NetMiddleware) -> Observable<Tin
 
     return b.do { res in
 
-        if res.request == nil {
-            print("[Cache:]")
-        }
-        print("=>O:", res.statusCode)
         if let urlRequest = try? c.dataRequest?.convertible.asURLRequest() {
-            print("=>O", urlRequest.description)
-            print("=>O", urlRequest.allHTTPHeaderFields)
-            print("=>O", urlRequest.httpBodyStream?.description)
-            print("=>O", urlRequest.httpMethod)
-            print("=>O", urlRequest.httpBody)
+
+            var dataSource = "[Remote]"
+
+            if res.request == nil {
+                dataSource = "[Cache]"
+            }
+
+            let data = urlRequest.httpBody
+            let json = JSON(data: data)
+            let body = json.description
+
+            let output = """
+                     ====== Response ====== [\(LogM.dateFormatter.string(from: Date()))]
+                     \t\(dataSource)
+                     \t-------------------
+                     \t\(res.statusCode)\t\t\(urlRequest.description)
+                     \t-------------------
+                     \t\(body)
+                     =========================
+                     """
+            if res.statusCode == 200 {
+                print("🟢", output)
+            } else {
+                print("🔴", output)
+            }
+        } else {
+            print("🟡 Received empty network response for \(res).")
         }
 
-        print("=>O", res.data)
     } onError: { error in
-        print(error)
+        print("🔴", error)
     }
 }
 
@@ -198,6 +234,7 @@ func loadingIn(a: DataRequest, c: NetMiddleware) -> DataRequest {
                 }
             case .viewController:
                 print("show loading HUD")
+                TinyHUD(.plainText, "loading...").show()
             case .none: break
 
             }
